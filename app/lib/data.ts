@@ -20,6 +20,8 @@ export async function fetchRevenue() {
     // Artificially delay a response for demo purposes.
     // Don't do this in production :)
 
+    // the time out will not have any effect while static rendering
+    // but will have on dynamic rendering
     console.log('Fetching revenue data...');
     await new Promise((resolve) => setTimeout(resolve, 3000));
 
